@@ -63,7 +63,8 @@ emulation cannot verify operating-system home-screen behavior.
 
 ## Reuse in another repository
 
-Read [the copy-over guide](docs/REUSE.md) before copying. Change the public app ID,
+Read [the copy-over guide](docs/REUSE.md) and
+[repository setup policy](docs/REPOSITORY_SETUP.md) before copying. Change the public app ID,
 branding, icons, deployment base, and feature namespaces before release. Keep the
 privacy policy. Do not copy `.git`, local hooks, secrets, build output, or installed
 dependencies. Hooks require separate local installation in each checkout.
