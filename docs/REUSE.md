@@ -7,9 +7,13 @@ hook implementations, or test artifacts. Preserve any destination privacy rules
 and reconcile its existing files instead of blindly overwriting them. Git hooks
 are local and require separate installation; never publish their contents.
 
+Before ordinary development, follow `docs/REPOSITORY_SETUP.md` to establish
+local identity/hooks, mandatory PRs, branch protection and CI through `gh`.
+
 Before the first deployment:
 
-1. Read `AGENTS.md`, `README.md`, and `docs/STORAGE.md`. Preserve their privacy
+1. Read `AGENTS.md`, `README.md`, `docs/STORAGE.md`, and
+   `docs/REPOSITORY_SETUP.md`. Preserve their privacy
    requirements and update documentation to describe the resulting product.
 2. Give `app.config.js` a unique public, non-personal `appId`. Change package name,
    title/description/theme/Apple metadata in `index.html`, and app branding.

@@ -21,6 +21,18 @@ adding data collection, persistence, logging, caching, or network requests.
 - Document actual data flows and retention as features are implemented; do not
   claim privacy guarantees that the implementation has not established.
 
+## Repository setup and PR-only delivery
+
+Read `docs/REPOSITORY_SETUP.md` before setup, GitHub configuration, or publication.
+On a new repository, use `gh` to verify the destination and enable PR-only `main`
+with required CI and admin enforcement. Preserve stronger existing rules. A
+source copy does not copy server settings or local hooks. Only an explicitly
+approved empty-repository bootstrap may establish main directly; ordinary work
+uses a feature branch and PR. Never bypass protection, approve your own PR,
+weaken checks, or infer a server-created merge identity from local Git settings.
+Verify approved public author/committer metadata before and immediately after
+merge. Keep production deployment restricted to trusted main.
+
 ## Identity safety
 
 - Use only the repository-local Git author and committer identity already
