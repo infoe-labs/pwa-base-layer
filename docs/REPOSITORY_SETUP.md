@@ -104,8 +104,8 @@ protection by attempting a real main push; read back server configuration.
 Useful repository settings after checking existing policy:
 
 ```sh
-gh repo edit "$repo" --enable-squash-merge --disable-merge-commit \
-  --disable-rebase-merge --delete-branch-on-merge
+gh repo edit "$repo" --enable-squash-merge --enable-merge-commit=false \
+  --enable-rebase-merge=false --delete-branch-on-merge
 gh api --method PUT "repos/$repo/actions/permissions/workflow" \
   -f default_workflow_permissions=read -F can_approve_pull_request_reviews=false
 ```
