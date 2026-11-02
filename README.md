@@ -1,5 +1,7 @@
 # PWA Base Layer
 
+**Live site: [GitHub Pages](https://infoe-labs.github.io/pwa-base-layer/)**
+
 A copyable foundation for installable, offline-capable apps: **React + Vite,
 Tailwind CSS + shadcn/ui, vite-plugin-pwa + Workbox**, and GitHub Pages deployment.
 The demo is intentionally small; reusable browser modules live in `src/lib`.
